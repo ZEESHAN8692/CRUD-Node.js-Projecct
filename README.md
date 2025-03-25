@@ -1,2 +1,14 @@
 # CRUD-Node.js-Projecct
-CRUD Projecct Node.js Using Node.js , HTML ,CSS, Bootstrap 
+CRUD Projecct 
+
+# Using Tecnology
+
+1. Node.js
+2. HTML
+3. CSS
+4. BOOTSTRAP
+
+
+# Pattern :- 
+MVC Pattern
+   
