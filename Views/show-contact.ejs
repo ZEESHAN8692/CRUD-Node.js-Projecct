@@ -17,7 +17,9 @@
                     >First Name</label
                   >
                   <div class="col-md-9">
-                    <p class="form-control-plaintext text-muted">Alfred</p>
+                    <p class="form-control-plaintext text-muted">
+                      <%= contact.first_name %>
+                    </p>
                   </div>
                 </div>
 
@@ -26,7 +28,9 @@
                     >Last Name</label
                   >
                   <div class="col-md-9">
-                    <p class="form-control-plaintext text-muted">Kuhlman</p>
+                    <p class="form-control-plaintext text-muted">
+                      <%= contact.last_name %>
+                    </p>
                   </div>
                 </div>
 
@@ -36,7 +40,7 @@
                   >
                   <div class="col-md-9">
                     <p class="form-control-plaintext text-muted">
-                      alfred@test.com
+                      <%= contact.email %>
                     </p>
                   </div>
                 </div>
@@ -47,7 +51,7 @@
                   >
                   <div class="col-md-9">
                     <p class="form-control-plaintext text-muted">
-                      +6286767565656
+                      <%= contact.phone %>
                     </p>
                   </div>
                 </div>
@@ -58,18 +62,24 @@
                   >
                   <div class="col-md-9">
                     <p class="form-control-plaintext text-muted">
-                      Lorem ipsum dolor
+                      <%= contact.address %>
                     </p>
                   </div>
                 </div>
                 <hr />
                 <div class="form-group row mb-0">
                   <div class="col-md-9 offset-md-3">
-                    <a href="#" class="btn btn-info">Edit</a>
-                    <a href="#" class="btn btn-outline-danger">Delete</a>
-                    <a href="index.html" class="btn btn-outline-secondary"
-                      >Cancel</a
+                    <a
+                      href="/update-contact/<%= contact._id %>"
+                      class="btn btn-info"
+                      >Edit</a
                     >
+                    <a
+                      href="/delete-contact/<%= contact._id %>"
+                      class="btn btn-outline-danger"
+                      >Delete</a
+                    >
+                    <a href="/" class="btn btn-outline-secondary">Cancel</a>
                   </div>
                 </div>
               </div>
@@ -81,4 +91,3 @@
   </div>
 </main>
 <%-include("partials/footer") %>
-
