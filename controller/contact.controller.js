@@ -10,7 +10,7 @@ export const showContactPage = async (req, res) => {
   res.render("show-contact");
 };
 export const addContactPage = async (req, res) => {
-  res.render("add-contact");
+  res.render("add-contacts");
 };
 
 export const addContact = async (req, res) => {};
