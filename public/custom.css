@@ -1,10 +1,10 @@
 body {
 	font-family: 'Varela Round', sans-serif;
-	background-color: #f7f7f7;
+	background-color: #f1e7f1;
 }
 
 .navbar {
-	background: #fff;
+	background: #490648;
 	-moz-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
 	box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
@@ -15,11 +15,13 @@ body {
 	font-weight: bold;
 	letter-spacing: -1px;
 	font-size: 20px;
-	color: #dd5638;
+	color: #ffff;
+
+	
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
-    color: #435d7d;
+    color: #490648;
 }
 
 .btn-circle {
@@ -34,12 +36,12 @@ body {
 
 .card-title {
     color: #fff;
-    background: #435d7d;
+    background: #490648;
     padding: 16px 20px;
 }
 
 .footer {
-	background-color: #435d7d; 
+	background-color: #490648; 
 	color: #f7f7f7;
 }
 

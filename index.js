@@ -4,7 +4,7 @@ import { Database } from "./config/database.js";
 const app = express();
 
 // server
-const PORT = 3000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Successfull connect port http://localhost:${3000}/`);
 });
