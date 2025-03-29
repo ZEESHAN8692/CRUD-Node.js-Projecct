@@ -12,7 +12,11 @@
             </div>
           </div>
           <div class="card-body">
-            <h2>hello</h2>
+            <% if(massege){ %>
+            <h1><%=massege %></h1>
+            <% }else{%>
+            <h1>Internal Server Error</h1>
+            <% } %>
           </div>
         </div>
       </div>

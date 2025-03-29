@@ -1,27 +1,28 @@
 body {
-	font-family: 'Varela Round', sans-serif;
-	background-color: #f1e7f1;
+  font-family: "Varela Round", sans-serif;
+  background-color: #f1e7f1;
 }
 
 .navbar {
-	background: #490648;
-	-moz-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
-	box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
-	padding: 10px 16px;
+  background: #490648;
+  -moz-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+  box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+  padding: 10px 16px;
 }
 
 .navbar .navbar-brand {
-	font-weight: bold;
-	letter-spacing: -1px;
-	font-size: 20px;
-	color: #ffff;
-
-	
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-size: 20px;
+  color: #ffff;
 }
+.navbar .navbar-brand:hover{
+	color: #ebe8e8;
 
-.navbar-light .navbar-nav .active>.nav-link {
-    color: #490648;
+}
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #490648;
 }
 
 .btn-circle {
@@ -35,16 +36,16 @@ body {
 }
 
 .card-title {
-    color: #fff;
-    background: #490648;
-    padding: 16px 20px;
+  color: #fff;
+  background: #490648;
+  padding: 16px 20px;
 }
 
 .footer {
-	background-color: #490648; 
-	color: #f7f7f7;
+  background-color: #490648;
+  color: #f7f7f7;
 }
 
 .footer a {
-	color: #d9d9d9;
+  color: #d9d9d9;
 }
