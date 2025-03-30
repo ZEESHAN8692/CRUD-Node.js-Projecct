@@ -9,6 +9,10 @@ CRUD Projecct
 4. BOOTSTRAP
 
 
+Error Handling 
+
+
 # Pattern :- 
 MVC Pattern
-   
+
+  
