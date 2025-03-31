@@ -4,11 +4,30 @@ import mongoose from "mongoose";
 
 export const getContact = async (req, res) => {
   try {
-    const contact = await Contact.find();
-    if (!contact) {
+    const { page = 1, limit = 5 } = req.query;
+    const option = {
+      page: parseInt(page),
+      limit: parseInt(limit),
+    };
+    const result = await Contact.paginate({}, option);
+
+    if (!result) {
       res.render("404", { massege: "Contact Not Found" });
     }
-    res.render("home", { contact });
+    // res.send(result);
+    res.render("home", {
+      totalDocs: result.totalDocs,
+      limit: result.limit,
+      totalPages: result.totalPages,
+      currentPage: result.page,
+      counter: result.pagingCounter,
+      hasPrevPage: result.hasPrevPage,
+      hasNextPage: result.hasNextPage,
+      prevPage: result.prevPage,
+      nextPage: result.nextPage,
+      contact: result.contact,
+      contact: result.docs,
+    });
   } catch (error) {
     res.render("500", { massege: error });
   }

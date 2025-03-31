@@ -19,7 +19,7 @@
             <table class="table table-striped table-hover">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
+                  <th scope="col">Sr</th>
                   <th scope="col">First Name</th>
                   <th scope="col">Last Name</th>
                   <th scope="col">Email</th>
@@ -28,9 +28,9 @@
                 </tr>
               </thead>
               <tbody>
-                <% let count = 1 %> <% contact.map((item)=>{%>
+                <% let srNumber = counter %> <% contact.map((item)=>{%>
                 <tr>
-                  <td><%= count++ %></td>
+                  <td><%= srNumber++ %></td>
                   <td><%= item.first_name %></td>
                   <td><%= item.last_name %></td>
                   <td><%= item.email %></td>
@@ -60,6 +60,24 @@
                 <%}) %>
               </tbody>
             </table>
+            <nav>
+              <ul class="pagination justify-content-center">
+                <% let PreviousClass = hasPrevPage ? "":"disabled" %>
+
+                <li class="page-item <%= PreviousClass %>">
+                  <a class="page-link" href="/?page=<%= prevPage%>">Previous</a>
+                </li>
+                <% for(let i =1; i <= totalPages; i++ ){ let activeClass =
+                currentPage==i?"active":"" %>
+                <li class="page-item <%= activeClass%>">
+                  <a class="page-link" href="/?page=<%= i %>"><%= i %></a>
+                </li>
+                <%} %> <% let NextClass = hasNextPage ? "":"disabled" %>
+                <li class="page-item <%= NextClass %>">
+                  <a class="page-link" href="/?page=<%= nextPage%>">Next</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
