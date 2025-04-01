@@ -1,5 +1,6 @@
 # CRUD-Node.js-Projecct
-CRUD Projecct 
+
+CRUD Projecct
 
 # Using Tecnology
 
@@ -8,11 +9,8 @@ CRUD Projecct
 3. CSS
 4. BOOTSTRAP
 
+Error Handling
 
-Error Handling 
+# Pattern :-
 
-
-# Pattern :- 
 MVC Pattern
-
-  
