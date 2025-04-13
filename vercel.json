@@ -3,16 +3,13 @@
   "builds": [
     {
       "src": "./index.js",
-      "use": "@vercel/node",
-      "config": {
-        "maxDuration": 60  // Increase the max duration to 60 seconds
-      }
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/index.js"
     }
   ]
 }
